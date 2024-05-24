@@ -7,12 +7,14 @@ export default function SpeciesListItem({ species }) {
   const { name, dexNumber, dexEntry, image } = species;
 
   return (
-    <li>
-      <h3>
-        {name} <em>(#{dexNumber})</em>
-      </h3>
+    <li className={styles['list-item']}>
       <img src={image} alt={name} />
-      <p>{dexEntry}</p>
+      <div>
+        <h3>
+          {name} <em>(#{dexNumber})</em>
+        </h3>
+        <p>{dexEntry}</p>
+      </div>
     </li>
   );
 }

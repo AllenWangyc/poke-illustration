@@ -30,7 +30,7 @@ export default function SearchForm({ onSearch }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles['form-container']}>
       <label htmlFor="search">Text search:</label>
       <input
         id="search"

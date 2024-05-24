@@ -6,9 +6,11 @@ import styles from "./SpeciesList.module.css";
  */
 export default function SpeciesList({ species }) {
   return (
-    <ul>
+    <ul className={styles.list}>
       {species.map((s) => (
-        <SpeciesListItem key={s.dexNumber} species={s} />
+        <li key={s.dexNumber} className={styles['list-item-container']}>
+          <SpeciesListItem species={s} />
+        </li>
       ))}
     </ul>
   );
