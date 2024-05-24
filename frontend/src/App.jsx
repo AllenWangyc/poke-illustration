@@ -3,7 +3,6 @@ import styles from "./App.module.css";
 import SearchForm from "./components/SearchForm";
 import axios from "axios";
 import SpeciesList from "./components/SpeciesList";
-import { allSpeciesAPI } from "./apis";
 
 const BASE_URL = `${import.meta.env.VITE_API_BASE_URL}/species`;
 
@@ -16,9 +15,12 @@ export default function App() {
   // TODO Load species from backend with useEffect and either axios or fetch()
   useEffect(() => {
     const getAllSpecies = async () => {
-      const res = await allSpeciesAPI()
-      const data = res.data
-      setSpecies(data)
+      try {
+        const res = await axios.get(BASE_URL)
+        setSpecies(res.data)
+      } catch (error) {
+        console.error('Error fetching search results', error)
+      }
     }
     getAllSpecies()
   }, [])
@@ -29,9 +31,24 @@ export default function App() {
    * @param {string} textSearch a string if a text search should be performed; otherwise null.
    * @param {string} typeSearch a string if a type search should be performed; otherwise null.
    */
-  function handleSearch(textSearch, typeSearch) {
+  async function handleSearch(textSearch, typeSearch) {
     // TODO Implement this.
     console.log(textSearch, typeSearch);
+    const params = {}
+    if (textSearch) {
+      params.text = textSearch
+    }
+    if (typeSearch) {
+      params.type = typeSearch
+    }
+    try {
+      const res = await axios.get(BASE_URL, {
+        params
+      })
+      setSpecies(res.data)
+    } catch (error) {
+      console.error('Error fetching search results', error)
+    }
   }
 
   return (
