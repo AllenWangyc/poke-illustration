@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "000000000000000000000001",
+    "dexNumber": 1,
+    "name": "Bulbasaur",
+    "types": ["Grass", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "dexEntry": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow."
+  },
+  {
+    "_id": "000000000000000000000002",
+    "dexNumber": 2,
+    "name": "Ivysaur",
+    "types": ["Grass", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "dexEntry": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
+  },
+  {
+    "_id": "000000000000000000000003",
+    "dexNumber": 3,
+    "name": "Venusaur",
+    "types": ["Grass", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "dexEntry": "A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle."
+  },
+  {
+    "_id": "000000000000000000000004",
+    "dexNumber": 4,
+    "name": "Charmander",
+    "types": ["Fire"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "dexEntry": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out."
+  },
+  {
+    "_id": "000000000000000000000005",
+    "dexNumber": 5,
+    "name": "Charmeleon",
+    "types": ["Fire"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "dexEntry": "If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings."
+  },
+  {
+    "_id": "000000000000000000000006",
+    "dexNumber": 6,
+    "name": "Charizard",
+    "types": ["Fire", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "dexEntry": "Its wings can carry this Pokémon close to an altitude of 4,600 feet. It blows out fire at very high temperatures."
+  },
+  {
+    "_id": "000000000000000000000007",
+    "dexNumber": 7,
+    "name": "Squirtle",
+    "types": ["Water"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "dexEntry": "When it feels threatened, it draws its limbs inside its shell and sprays water from its mouth."
+  },
+  {
+    "_id": "000000000000000000000008",
+    "dexNumber": 8,
+    "name": "Wartortle",
+    "types": ["Water"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "dexEntry": "It cleverly controls its furry ears and tail to maintain its balance while swimming."
+  },
+  {
+    "_id": "000000000000000000000009",
+    "dexNumber": 9,
+    "name": "Blastoise",
+    "types": ["Water"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "dexEntry": "The rocket cannons on its shell fire jets of water capable of punching holes through thick steel."
+  },
+  {
+    "_id": "00000000000000000000000a",
+    "dexNumber": 10,
+    "name": "Caterpie",
+    "types": ["Bug"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "dexEntry": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
+  },
+  {
+    "_id": "00000000000000000000000b",
+    "dexNumber": 11,
+    "name": "Metapod",
+    "types": ["Bug"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "dexEntry": "Even though it is encased in a sturdy shell, the body inside is tender. It can’t withstand a harsh attack."
+  },
+  {
+    "_id": "00000000000000000000000c",
+    "dexNumber": 12,
+    "name": "Butterfree",
+    "types": ["Bug", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "dexEntry": "It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest."
+  },
+  {
+    "_id": "00000000000000000000000d",
+    "dexNumber": 13,
+    "name": "Weedle",
+    "types": ["Bug", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "dexEntry": "Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves."
+  },
+  {
+    "_id": "00000000000000000000000e",
+    "dexNumber": 14,
+    "name": "Kakuna",
+    "types": ["Bug", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "dexEntry": "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy."
+  },
+  {
+    "_id": "00000000000000000000000f",
+    "dexNumber": 15,
+    "name": "Beedrill",
+    "types": ["Bug", "Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "dexEntry": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly."
+  },
+  {
+    "_id": "000000000000000000000010",
+    "dexNumber": 16,
+    "name": "Pidgey",
+    "types": ["Normal", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "dexEntry": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back."
+  },
+  {
+    "_id": "000000000000000000000011",
+    "dexNumber": 17,
+    "name": "Pidgeotto",
+    "types": ["Normal", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "dexEntry": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey."
+  },
+  {
+    "_id": "000000000000000000000012",
+    "dexNumber": 18,
+    "name": "Pidgeot",
+    "types": ["Normal", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "dexEntry": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons."
+  },
+  {
+    "_id": "000000000000000000000013",
+    "dexNumber": 19,
+    "name": "Rattata",
+    "types": ["Normal"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "dexEntry": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area."
+  },
+  {
+    "_id": "000000000000000000000014",
+    "dexNumber": 20,
+    "name": "Raticate",
+    "types": ["Normal"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "dexEntry": "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey."
+  },
+  {
+    "_id": "000000000000000000000015",
+    "dexNumber": 21,
+    "name": "Spearow",
+    "types": ["Normal", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "dexEntry": "Inept at flying high. However, it can fly around very fast to protect its territory."
+  },
+  {
+    "_id": "000000000000000000000016",
+    "dexNumber": 22,
+    "name": "Fearow",
+    "types": ["Normal", "Flying"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "dexEntry": "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly."
+  },
+  {
+    "_id": "000000000000000000000017",
+    "dexNumber": 23,
+    "name": "Ekans",
+    "types": ["Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "dexEntry": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
+  },
+  {
+    "_id": "000000000000000000000018",
+    "dexNumber": 24,
+    "name": "Arbok",
+    "types": ["Poison"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "dexEntry": "The frightening patterns on its belly have been studied. Six variations have been confirmed."
+  },
+  {
+    "_id": "000000000000000000000019",
+    "dexNumber": 25,
+    "name": "Pikachu",
+    "types": ["Electric"],
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "dexEntry": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them."
+  }
+]
