@@ -8,9 +8,7 @@ export default function SpeciesList({ species }) {
   return (
     <ul className={styles.list}>
       {species.map((s) => (
-        <li key={s.dexNumber} className={styles['list-item-container']}>
-          <SpeciesListItem species={s} />
-        </li>
+        <SpeciesListItem species={s} key={s.dexNumber} />
       ))}
     </ul>
   );

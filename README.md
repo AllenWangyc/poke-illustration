@@ -36,6 +36,8 @@ In return, after you have completed the test, please write in the space below, w
 
 ```
 1. In task 4, I didn't know how to provide optional query parameters. Specifically, I don't know whether I should create multiple back-end routes for each of these possibilities, (i.e., one for routes with type as a parameter, one for routes with text as a parameter, and one for both.) Or is there a way to write a route that can flexibly handle multiple optional parameters with only one route. So I asked chatGPT and I found an implementation of the latter one.
+2. in task 6, chatGPT gneerated couple of css files that make the webpage more beautiful and clear.
+3. in task 8, GPT helped me with implementing the infinite scroll. It helped me realise some details that I didn't notice, e.g. reset the page to 0 when user click the search button... To be honest, I don't think I can implement the 8th task without its help.
 ```
 
 ## Task One - Species schema and database population _(backend)_ - 10%
@@ -144,9 +146,9 @@ In this task, add two more optional query parameters to your `/api/species` rout
 
   - If `page` is not an integer or is less than `0`, return a `422` error response.
 
-Again, for this task, **don't** read in the whole array into JavaScript then return a sub-array. Instead, use MongoDb's [`skip` and `limit` options](<https://mongoosejs.com/docs/api/query.html#Query.prototype.setOptions()>) when performing the MongoDB query.
+Again, for this task, **don't** read in the whole array into JavaScript then return a sub-array. Instead, use MongoDb's [`skip` and `limit` options](https://mongoosejs.com/docs/api/query.html#Query.prototype.setOptions()) when performing the MongoDB query.
 
-Options can be provided as the _third_ argument to [`find()`](<https://mongoosejs.com/docs/api/model.html#Model.find()>), for example:
+Options can be provided as the _third_ argument to [`find()`](https://mongoosejs.com/docs/api/model.html#Model.find()), for example:
 
 ```js
 /**
@@ -201,5 +203,11 @@ You have three options to complete this task:
 Once complete, in the space below, write down which option you chose, and how you implemented your solution. Three or four sentences is fine.
 
 ```
-Your answer here.
+Medium mode
+I tried to google the infinite scroll componetn and found one 'react-infinite-scroll-component'
+installed it by running `npm install --save react-infinite-scroll-component`
+Then wrote it wrapping the SpeciesList component
+What's more, I rewrite the API function that access the backend route api/species with under the help with chatGPT
+the function has been changed from 'retrieve all the species' to 'retrieve 10 species' as task 8 required.
+once user scrolling down to the bottom, the state 'page' would plus 1 automatically until there are no more species.
 ```

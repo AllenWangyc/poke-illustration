@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const { type, text, page, resultsPerPage } = req.query
     let filter = {}
+    let options = {}
 
     // handle with filter parameters
     if (type) {
@@ -36,12 +37,8 @@ router.get('/', async (req, res) => {
         return res.status(422).json(error)
       }
       skip = pageNum * limit
+      options = { limit, skip }
     }
-    else {
-      return res.status(422).json(error)
-    }
-
-    const options = { limit, skip }
 
     const results = await Species.find(filter, null, options)
     res.json(results)
