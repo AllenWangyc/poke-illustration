@@ -4,14 +4,26 @@ import { Species } from "../../data/schema.js";
 const router = express.Router();
 
 // TODO Your code here.
-const retrieveAllSpecies = async () => {
-  return await Species.find()
-}
-
 router.get('/', async (req, res) => {
-  const allSpecies = await retrieveAllSpecies()
-  if (allSpecies) return res.json(allSpecies)
-  return res.sendStatus(400)
+  try {
+    const { type, text } = req.query
+    let query = {}
+
+    if (type) {
+      query.types = type
+    }
+
+    if (text) {
+      query.$text = { $search: text }
+    }
+
+    console.log(query);
+
+    const results = await Species.find(query)
+    res.json(results)
+  } catch (error) {
+    res.status(400).send(error)
+  }
 })
 
 export default router;
