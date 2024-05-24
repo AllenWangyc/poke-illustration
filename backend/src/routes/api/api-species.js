@@ -4,20 +4,46 @@ import { Species } from "../../data/schema.js";
 const router = express.Router();
 
 // TODO Your code here.
+
 router.get('/', async (req, res) => {
   try {
-    const { type, text } = req.query
-    let query = {}
+    const { type, text, page, resultsPerPage } = req.query
+    let filter = {}
 
+    // handle with filter parameters
     if (type) {
-      query.types = type
+      filter.types = type
     }
 
     if (text) {
-      query.$text = { $search: text }
+      filter.$text = { $search: text }
     }
 
-    const results = await Species.find(query)
+    // handle with options parameters, set the limit default value to 20
+    let limit = 20
+    if (resultsPerPage) {
+      const resultsNum = parseInt(resultsPerPage, 10)
+      if (isNaN(resultsNum) || resultsNum <= 0) {
+        return res.status(422).json(error)
+      }
+      limit = resultsNum
+    }
+
+    let skip = 0
+    if (page) {
+      const pageNum = parseInt(page, 10)
+      if (isNaN(pageNum) || pageNum < 0) {
+        return res.status(422).json(error)
+      }
+      skip = pageNum * limit
+    }
+    else {
+      return res.status(422).json(error)
+    }
+
+    const options = { limit, skip }
+
+    const results = await Species.find(filter, null, options)
     res.json(results)
   } catch (error) {
     res.status(400).send(error)
