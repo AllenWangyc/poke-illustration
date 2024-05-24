@@ -17,8 +17,6 @@ router.get('/', async (req, res) => {
       query.$text = { $search: text }
     }
 
-    console.log(query);
-
     const results = await Species.find(query)
     res.json(results)
   } catch (error) {

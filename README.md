@@ -35,7 +35,7 @@ AI tools such as ChatGPT, Copilot etc. are **allowed**, and will not negatively 
 In return, after you have completed the test, please write in the space below, where and how you used the tools, how useful they were, and whether they introduced any unforeseen difficulties:
 
 ```
-Your answer here
+1. In task 4, I didn't know how to provide optional query parameters. Specifically, I don't know whether I should create multiple back-end routes for each of these possibilities, (i.e., one for routes with type as a parameter, one for routes with text as a parameter, and one for both.) Or is there a way to write a route that can flexibly handle multiple optional parameters with only one route. So I asked chatGPT and I found an implementation of the latter one.
 ```
 
 ## Task One - Species schema and database population _(backend)_ - 10%
@@ -59,7 +59,7 @@ Once this task is complete, the `npm` task `init-db` - which runs the program lo
 If you need to change this connection string **for any reason**, please change the text below to let us know:
 
 ```
-I HAVE / HAVE NOT changed the database connection string in .env
+I HAVE NOT changed the database connection string in .env
 ```
 
 ## Task Two - Basic species endpoint _(backend)_ - 5%
@@ -111,7 +111,9 @@ You will need to modify the code in `App.jsx` so that, when this function is cal
 Once complete, in the space below, explain how you modified your code to achieve this functionality. A couple of sentences is fine:
 
 ```
-Your answer here
+I firstly create a constant named 'params' used for include the search varialbes that are not null.
+Then invoke the backend API with the 'params' as a parameter.
+The two parameters used for the search in the previous task have already been added to the back-end route, so calling the back-end API will return the results of the search to the front-end
 ```
 
 ## Task Six - Styling _(frontend)_ - 10%
