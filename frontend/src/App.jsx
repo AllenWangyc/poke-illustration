@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import SearchForm from "./components/SearchForm";
 import axios from "axios";
 import SpeciesList from "./components/SpeciesList";
+import { allSpeciesAPI } from "./apis";
 
 const BASE_URL = `${import.meta.env.VITE_API_BASE_URL}/species`;
 
@@ -13,6 +14,14 @@ export default function App() {
   const [species, setSpecies] = useState([]);
 
   // TODO Load species from backend with useEffect and either axios or fetch()
+  useEffect(() => {
+    const getAllSpecies = async () => {
+      const res = await allSpeciesAPI()
+      const data = res.data
+      setSpecies(data)
+    }
+    getAllSpecies()
+  }, [])
 
   /**
    * Handles a search by resetting the scroll to the top position and modifying the URL.
