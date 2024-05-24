@@ -16,14 +16,14 @@ export default function App() {
   useEffect(() => {
     const getAllSpecies = async () => {
       try {
-        const res = await axios.get(BASE_URL)
-        setSpecies(res.data)
+        const res = await axios.get(BASE_URL);
+        setSpecies(res.data);
       } catch (error) {
-        console.error('Error fetching search results', error)
+        console.error('Error fetching search results', error);
       }
-    }
-    getAllSpecies()
-  }, [])
+    };
+    getAllSpecies();
+  }, []);
 
   /**
    * Handles a search by resetting the scroll to the top position and modifying the URL.
@@ -32,22 +32,18 @@ export default function App() {
    * @param {string} typeSearch a string if a type search should be performed; otherwise null.
    */
   async function handleSearch(textSearch, typeSearch) {
-    // TODO Implement this.
-    console.log(textSearch, typeSearch);
-    const params = {}
+    const params = {};
     if (textSearch) {
-      params.text = textSearch
+      params.text = textSearch;
     }
     if (typeSearch) {
-      params.type = typeSearch
+      params.type = typeSearch;
     }
     try {
-      const res = await axios.get(BASE_URL, {
-        params
-      })
-      setSpecies(res.data)
+      const res = await axios.get(BASE_URL, { params });
+      setSpecies(res.data);
     } catch (error) {
-      console.error('Error fetching search results', error)
+      console.error('Error fetching search results', error);
     }
   }
 
