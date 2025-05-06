@@ -31,7 +31,8 @@ Make sure you have the following installed:
 
 
 ## Live Demo
-[![Watch Demo](https://github.com/user-attachments/assets/d4a9cf66-6d6b-4b9f-87fc-20c763ef0bba)](https://youtu.be/JmxOLNlIn3s)
+[![Watch Demo](https://github.com/user-attachments/assets/9ec2af8b-32f8-4fcc-8a2f-c161887f1ba4)](https://youtu.be/JmxOLNlIn3s)
+
 
 ### 📦 Installation
 
