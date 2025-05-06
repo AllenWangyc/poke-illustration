@@ -34,7 +34,7 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/AllenWangyc/pokemon-explorer.git
 cd pokedex-explorer
-npm install
+npm install```
 
 ## Live Demo
 [![Watch Demo](https://github.com/user-attachments/assets/d4a9cf66-6d6b-4b9f-87fc-20c763ef0bba)](https://youtu.be/JmxOLNlIn3s)
