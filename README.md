@@ -37,4 +37,4 @@ cd pokedex-explorer
 npm install
 
 ## Live Demo
-![Click here](https://github.com/user-attachments/assets/690bc33c-5b52-419a-84ca-85bf0b4453f7)
+[![Watch Demo](https://github.com/user-attachments/assets/d4a9cf66-6d6b-4b9f-87fc-20c763ef0bba)](https://youtu.be/JmxOLNlIn3s)
